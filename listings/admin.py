@@ -4,7 +4,7 @@ from .models import Listing
 
 
 class ListingAdmin(admin.ModelAdmin):
-    list_display = ('id', 'title', 'is_published',
+    list_display = ('id', 'title', 'is_published', 'is_sold',
                     'price', 'city', 'state', 'list_date')
     list_display_links = ('id', 'title')
     list_filter = ('city', 'price')
