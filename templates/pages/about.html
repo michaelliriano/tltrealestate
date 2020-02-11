@@ -1,13 +1,13 @@
 {% extends 'base.html' %} 
 
 {% load static %} 
-
+{% block title %} | Who We Are{% endblock %}
 {% block content %}
 <section id="showcase-inner" class="py-5 text-white">
   <div class="container">
     <div class="row text-center">
       <div class="col-md-12">
-        <h1 class="display-4">About The Liriano Team</h1>
+        <h1 class="display-4">The Liriano Team</h1>
         <p class="lead">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt,
           pariatur!
@@ -46,7 +46,8 @@
           esse officia repudiandae ad saepe ex, amet neque quod accusamus rem
           quia magnam magni dolorum facilis ullam minima perferendis?
           Exercitationem at quaerat commodi id libero eveniet harum perferendis
-          laborum molestias quia.
+          laborum molestias quia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis esse officia repudiandae ad saepe ex, amet neque quod accusamus rem quia magnam magni dolorum facilis ullam minima perferendis? Exercitationem at quaerat commodi id libero eveniet harum perferendis laborum molestias quia.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis esse officia repudiandae ad saepe ex, amet neque quod accusamus rem quia magnam magni dolorum facilis ullam minima perferendis? Exercitationem at quaerat commodi id libero eveniet harum perferendis laborum molestias quia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis esse officia repudiandae ad saepe ex, amet neque quod accusamus rem quia magnam magni dolorum facilis ullam minima perferendis? Exercitationem at quaerat commodi id libero eveniet harum perferendis laborum molestias quia.
         </p>
       </div>
       <div class="col-md-4">
@@ -59,7 +60,7 @@
             alt="Seller of the month"
           />
           <div class="card-body">
-            <h5 class="card-title">Seller Of The Month</h5>
+            <h5 class="card-title">Team Leader</h5>
             <h6 class="text-secondary">{{ realtor.name }}</h6>
             <p class="card-text">
               {{ realtor.description }}
@@ -81,12 +82,12 @@
     aperiam, unde aliquid at similique!
   </h4>
   <hr />
-  <a href="listings.html" class="btn btn-secondary text-white btn-lg"
+  <a href="{% url 'listings' %}" class="btn btn-secondary text-white btn-lg"
     >View Our Featured Listings</a
   >
 </section>
 
-<!-- Team -->
+{% comment %} <!-- Team -->
 <section id="team" class="py-5">
   <div class="container">
     <h2 class="text-center">Our Team</h2>
@@ -115,5 +116,5 @@
       {% endif %}
     </div>
   </div>
-</section>
+</section> {% endcomment %}
 {% endblock %}
