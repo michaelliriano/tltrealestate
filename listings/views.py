@@ -6,7 +6,7 @@ from .models import Listing
 
 
 def index(request):
-    listings = Listing.objects.order_by('-list_date').filter(is_published=True)
+    listings = Listing.objects.order_by('-list_date').filter(active=True)
 
     paginator = Paginator(listings, 3)
     page = request.GET.get('page')
@@ -30,7 +30,7 @@ def listing(request, listing_id):
 
 
 def sold(request):
-    listings = Listing.objects.order_by('-list_date').filter(is_sold=True)
+    listings = Listing.objects.order_by('-list_date').filter(sold=True)
 
     paginator = Paginator(listings, 3)
     page = request.GET.get('page')

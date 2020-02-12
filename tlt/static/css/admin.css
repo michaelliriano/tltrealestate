@@ -11,11 +11,11 @@ a:visited {
   color: #10284e;
 }
 div.breadcrumbs {
-  background: #30caa0;
+  background: #0088ce;
   color: #10284e;
 }
 div.breadcrumbs a {
-  color: #333;
+  color: #ffff;
 }
 .module h2,
 .module caption,
