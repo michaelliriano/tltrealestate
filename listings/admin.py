@@ -4,11 +4,11 @@ from .models import Listing
 
 
 class ListingAdmin(admin.ModelAdmin):
-    list_display = ('id', 'title', 'active', 'sold',
+    list_display = ('id', 'title', 'is_published', 'sold',
                     'price', 'city', 'state', 'list_date')
     list_display_links = ('id', 'title')
     list_filter = ('city', 'price')
-    list_editable = ('active', 'sold')
+    list_editable = ('is_published', 'sold')
     search_fields = ('title', 'description', 'address',
                      'city', 'zipcode', 'price')
     list_per_page = 5

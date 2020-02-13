@@ -9,7 +9,7 @@
       <div class="col-md-12">
         <h1 class="display-4">The Liriano Team</h1>
         <p class="lead">
-          Representing Landlords, Tenants, Buyers and Sellers in the sales & leasing of Office, Retail, Industrial & Multi-family properties in Dade, Broward & Palm Beach counties.
+          Representing Investors, Buyers and Sellers in the sales & leasing of Office, Retail, Industrial & Multi-family properties in Dade, Broward & Palm Beach counties.
         </p>
       </div>
     </div>
@@ -36,7 +36,7 @@
       <div class="col-md-8">
         <h2>The Liriano Team is committed to excellence</h2>
         <p class="lead">
-          "Your South Florida Luxury Home & Relocation Specialists"
+          Your South Florida Luxury Home & Relocation Specialists
         </p>
         <img src="{% static 'img/about.jpg' %}" alt="" />
         <p class="mt-4">
@@ -54,11 +54,15 @@ The Liriano Team is South Florida's Premier Real Estate Team. Specializing in Lu
             alt="Seller of the month"
           />
           <div class="card-body">
-            <h5 class="card-title">Team Leader</h5>
-            <h6 class="text-secondary">{{ realtor.name }}</h6>
+            <h5 class="card-title">{{ realtor.title }}</h5>
+            <h5 class="text-secondary">{{ realtor.name }}</h5>
+            <hr>
             <p class="card-text">
               {{ realtor.description }}
             </p>
+            <h4 class="card-title">Contact Me:</h4>
+            <h6 class="text-secondary">Cell: {{ realtor.phone }}</h6>
+            <h6 class="text-secondary">Email: {{ realtor.email }}</h6>
           </div>
         </div>
         {% endfor %}

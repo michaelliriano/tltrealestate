@@ -13,7 +13,7 @@
               Experience, Integrity & Teamwork
             </h1>
             <p class="lead">
-              Representing Landlords, Tenants, Buyers and Sellers in the sales & leasing of Office, Retail, Industrial & Multi-family properties in Dade, Broward & Palm Beach counties.
+              Here at the Liriano Team, we do the hard work so you don't have to! Search are properties below:
             </p>
             <div class="search">
               <form action="{% url 'search' %}">
@@ -87,10 +87,11 @@
     <!-- Listings -->
     <section id="listings" class="py-5">
       <div class="container">
-        <h3 class="text-center mb-3">Latest Listings</h3>
-        <div class="row">
+        
         {% if listings %}
           {% for listing in listings %}
+          <h3 class="text-center mb-3">Latest Listings</h3>
+          <div class="row">
           <div class="col-md-6 col-lg-4 mb-4">
             <div class="card listing-preview">
               <img
@@ -162,27 +163,23 @@
           <div class="col-md-4">
             <i class="fas fa-comment fa-4x mr-4"></i>
             <hr />
-            <h3>Consulting Services</h3>
+            <h3>Relocation</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt,
-              debitis nam! Repudiandae, provident iste consequatur hic
-              dignissimos ratione ea quae.
+              Here at The Liriano Team, we consider ourselves "Relocation Specialist". Whether the property is in Miami, Broward or Palm Beach we are fully commited to you and your needs. 
             </p>
           </div>
           <div class="col-md-4">
             <i class="fas fa-home fa-4x mr-4"></i>
             <hr />
-            <h3>Propery Management</h3>
+            <h3>Investing</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt,
-              debitis nam! Repudiandae, provident iste consequatur hic
-              dignissimos ratione ea quae.
+              Having over 20 years in the Real Estate Industry, a great deal of those years have been specialized in Real Estate Investment. Whether it's a rental property or a flip, we are here to help!
             </p>
           </div>
           <div class="col-md-4">
             <i class="fas fa-suitcase fa-4x mr-4"></i>
             <hr />
-            <h3>Renting & Selling</h3>
+            <h3>Buying & Selling</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt,
               debitis nam! Repudiandae, provident iste consequatur hic
