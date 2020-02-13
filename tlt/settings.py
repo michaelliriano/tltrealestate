@@ -143,3 +143,8 @@ MEDIA_URL = '/media/'
 MESSAGE_TAGS = {
     messages.ERROR: 'danger'
 }
+
+try:
+    from .local_settings import *
+except ImportError:
+    pass
